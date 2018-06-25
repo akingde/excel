@@ -1,0 +1,25 @@
+@layout("/common/_container.html"){
+<title>导入页面</title>
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal" id="groupForm">
+            <div class="row btn-group-m-t center-block">
+                <div class="col-sm-12">
+                    <#button btnCss="info" label="下载模板" id="getTemplateBtn" icon="fa-download"/>
+                    <#button btnCss="info" label="选择文件" id="selectFileBtn" icon="fa-file-excel-o"/>
+                    <#button btnCss="info" label="开始导入" id="doImportBtn" icon="fa-upload"/>
+                    <#button btnCss="danger" label="取消" id="cancel" icon="fa-close"/>
+                </div>
+            </div>
+        </div>
+        <div class="layui-card" id="resultCard" style="display: none">
+            <div class="layui-card-header">导入结果</div>
+            <div class="layui-card-body" id="resultBody">
+            </div>
+        </div>
+
+        <form method="post" action="downloadTemplate" id="getTemplateForm"/>
+    </div>
+</div>
+<script src="${ctxPath}/static/js/import.js"></script>
+@}
