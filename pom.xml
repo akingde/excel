@@ -107,6 +107,6 @@
             </plugin>
         </plugins>
     </build>
-
+<finalName>Root</finalName>
 
 </project>
