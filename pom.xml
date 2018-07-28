@@ -106,7 +106,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+             <finalName>Root</finalName>
     </build>
-<finalName>Root</finalName>
+
 
 </project>
